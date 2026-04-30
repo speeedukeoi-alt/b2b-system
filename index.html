@@ -1,17 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>運転代行専門 Web集客パッケージ | Speed流 DXシステム</title>
+    <title>運転代行専門 Web集客システム | Speed流 DXパッケージ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* グラデーションテキスト用 */
         .text-gradient {
-            background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+            background: linear-gradient(90deg, #dc2626, #b91c1c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
         }
     </style>
 </head>
@@ -20,62 +23,115 @@
     <!-- ヘッダー / キャッチコピー -->
     <header class="bg-gray-900 text-white text-center py-20 px-4">
         <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            その運転代行の集客、<br class="hidden md:block">まだ運任せですか？
+            まだ、行きつけの飲食店への<br class="hidden md:block">「挨拶回り」で集客していますか？
         </h1>
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            宮崎県で半年間に360件の反響を叩き出した『高級代行Speed』の集客ノウハウを解禁。<br>
-            明日から電話が鳴り止まない最強のWeb集客インフラを丸ごと提供します。
+            紹介による「値切る・遅刻する客」に疲弊するのは、もう終わりにしましょう。<br>
+            スマホ検索トップを独占し、質の高い「新規優良客」だけを自動で獲得するWebインフラを提供します。
         </p>
         <span class="inline-block bg-red-600 text-white font-bold py-2 px-6 rounded-full text-sm md:text-base animate-pulse">
-            【各市町村・限定1社のみ】
+            【各市町村・限定1社のみのご提供】
         </span>
     </header>
 
-    <!-- 悩みの共感 -->
+    <!-- 悩みの共感（痛みの共有） -->
     <section class="py-16 px-4 max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900 border-b-4 border-blue-600 pb-2 inline-block">こんなお悩み、ありませんか？</h2>
-        <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
-            <ul class="space-y-4 text-lg">
-                <li class="flex items-center">
-                    <svg class="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    ポータルサイトに載せているが、他社との「安売り競争」で疲弊している
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 text-gray-900 border-b-4 border-red-600 pb-2 inline-block">
+            代行業の経営、こんな「見えないストレス」抱えていませんか？
+        </h2>
+        <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-red-600">
+            <ul class="space-y-6 text-lg">
+                <li class="flex items-start">
+                    <svg class="w-8 h-8 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <div>
+                        <strong class="block text-gray-900">しがらみによる「質の悪い客」</strong>
+                        <span class="text-gray-600 text-base">飲食店からの紹介手前、「他が安いから安くして」「ちょっと待ってて」という客を断りきれない。</span>
+                    </div>
                 </li>
-                <li class="flex items-center">
-                    <svg class="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    週末は忙しいが、平日は暇でドライバーを遊ばせている
+                <li class="flex items-start">
+                    <svg class="w-8 h-8 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <div>
+                        <strong class="block text-gray-900">ドライバーの疲弊・離職</strong>
+                        <span class="text-gray-600 text-base">理不尽な客対応や待機時間で現場が疲弊し、モチベーションが下がっている。</span>
+                    </div>
                 </li>
-                <li class="flex items-center">
-                    <svg class="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    ホームページやWeb広告をやりたいが、専門用語が全くわからない
+                <li class="flex items-start">
+                    <svg class="w-8 h-8 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <div>
+                        <strong class="block text-gray-900">売上が「運任せ・人任せ」</strong>
+                        <span class="text-gray-600 text-base">週末のイベントやスナックの混み具合など、他力本願で売上が安定しない。</span>
+                    </div>
                 </li>
             </ul>
-            <p class="mt-8 text-center text-xl font-bold text-gradient">
-                → その悩み、同業者である私たちが「すべて丸投げ」で解決します。
-            </p>
+            <div class="mt-8 p-4 bg-red-50 rounded-md text-center">
+                <p class="text-xl font-bold text-red-700">
+                    → 根本的な原因は、「新規客をコントロールできていないこと」です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解決策と得られる未来 -->
+    <section class="bg-pattern py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">同業だから分かる、私たちが提供する「3つの解決策」</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- 解決策1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">① 価格交渉してこない<br>「県外・出張客」を狙い撃つ</h3>
+                    <p class="text-gray-600">県外の観光客や出張ビジネスマンは地元の代行事情を知りません。彼らは必ず「スマホ検索で一番上に出た業者」に依頼します。私たちのシステムはこの「値切らない優良客」をダイレクトに獲得します。</p>
+                </div>
+
+                <!-- 解決策2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">② オンライン完結で<br>「しがらみ」を断ち切る</h3>
+                    <p class="text-gray-600">WebやLINE予約をメインにすることで、飲食店経由のしがらみを排除。自社の料金体系・ルールに納得したお客様だけを集めるため、現場ドライバーのストレスが激減します。</p>
+                </div>
+
+                <!-- 解決策3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">③ 入れ替わり時期に<br>「1年間のリピーター」を確保</h3>
+                    <p class="text-gray-600">歓送迎会など人の入れ替わり時期は最大のチャンスです。この時期にWeb検索から「初めて使ってくれる新規客」を囲い込めば、彼らはその後1年間、安定した自社のリピーターになります。</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- 実績 -->
-    <section class="bg-blue-50 py-16 px-4">
+    <section class="bg-gray-900 text-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-8">圧倒的な実績の証明</h2>
-            <p class="text-lg mb-8">
-                なぜ私たちが集客支援できるのか？ それは私たち自身が宮崎県で「Web集客のみ」で圧倒的な成果を出した実務経験があるからです。
+            <p class="text-lg mb-10 text-gray-300">
+                この「優良客だけを集める仕組み」で、私たち自身が宮崎県（運転代行Speed）で圧倒的な結果を出しました。
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">360<span class="text-lg text-gray-600">件突破</span></div>
-                    <p class="font-bold">半年間のGoogleマップ反響</p>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">360<span class="text-lg text-gray-400">件突破</span></div>
+                    <p class="font-bold">半年間のマップ経由反響</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">100<span class="text-lg text-gray-600">%</span></div>
-                    <p class="font-bold">Google広告 上部表示率</p>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <div class="text-xl font-bold text-blue-400 mb-2 mt-2">客層の劇的改善</div>
+                    <p class="font-bold">「質の高い新規客」を自動集客</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <div class="text-xl font-bold text-blue-600 mb-2 mt-2">高級・高単価路線</div>
-                    <p class="font-bold">それでも指名予約が殺到</p>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <div class="text-xl font-bold text-blue-400 mb-2 mt-2">利益率の向上</div>
+                    <p class="font-bold">ドライバーのストレス激減</p>
                 </div>
             </div>
+            <p class="mt-8 text-lg font-bold">
+                私たちが現場で実証したこの「勝てるインフラ」を、<br class="hidden md:block">貴社の屋号・コンセプトに合わせてそのまま構築・丸投げ運用します。
+            </p>
         </div>
     </section>
 
@@ -85,15 +141,15 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="border p-6 rounded-lg bg-white">
                 <h3 class="text-xl font-bold text-blue-800 mb-3">① スマホで爆速表示！維持費0円のWebサイト</h3>
-                <p>表示が遅いサイトはお客様を逃がします。サーバー代0円で1秒以内に開くスマホ特化型のサイトを作成。あなたの代行の「強み」を100%伝えます。</p>
+                <p>表示が遅いサイトはお客様を逃がします。最新技術（サーバー代0円）で1秒以内に開くスマホ特化型のサイトを作成。あなたの代行の「強み」を100%伝えます。</p>
             </div>
             <div class="border p-6 rounded-lg bg-white">
-                <h3 class="text-xl font-bold text-blue-800 mb-3">② 「今すぐ帰りたい客」を狙い撃つAI広告</h3>
-                <p>「高単価で質の良いお客様」をAIに学習させた当社独自のアカウント設定を共有。毎月の面倒な広告チューニングもすべて当社が行います。</p>
+                <h3 class="text-xl font-bold text-blue-800 mb-3">② 「優良な新規客」を狙い撃つAI広告運用</h3>
+                <p>「値切らない質の良いお客様」をAIに学習させた当社独自のアカウント設定を共有。毎月の面倒な広告チューニングもすべて当社が行います。</p>
             </div>
             <div class="border p-6 rounded-lg bg-white">
                 <h3 class="text-xl font-bold text-blue-800 mb-3">③ Googleマップ（MEO）上位独占ノウハウ</h3>
-                <p>「〇〇市 運転代行」と検索された際、一番上に表示されるための設定を代行します。宮崎で勝った口コミ・写真のノウハウをそのまま適用します。</p>
+                <p>「〇〇市 運転代行」と検索された際、一番上に表示されるための設定を代行します。宮崎で勝った口コミ・写真の勝ちパターンをそのまま適用します。</p>
             </div>
             <div class="border p-6 rounded-lg bg-white">
                 <h3 class="text-xl font-bold text-blue-800 mb-3">④ 電話対応を減らす「LINE自動予約」</h3>
@@ -103,21 +159,21 @@
     </section>
 
     <!-- 料金 -->
-    <section class="bg-gray-900 text-white py-16 px-4">
+    <section class="bg-gray-100 py-16 px-4">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-8">料金体系</h2>
             <p class="mb-8">同業者への支援として、初期費用を極限まで抑えました。<br>月額3万円で「IT集客担当の社員」を1人雇うのと同じ効果を得られます。</p>
             
-            <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <div class="mb-6 pb-6 border-b border-gray-600">
-                    <span class="text-gray-400 block mb-2">初期構築費用</span>
-                    <span class="text-4xl font-bold">100,000</span><span class="text-xl">円</span>
-                    <p class="text-sm text-gray-400 mt-2">サイト制作・広告初期設定・LINE構築・マップ最適化</p>
+            <div class="bg-white p-8 rounded-xl shadow-xl border-t-8 border-blue-600">
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <span class="text-gray-600 block mb-2 font-bold">初期構築費用</span>
+                    <span class="text-5xl font-extrabold text-gray-900">100,000</span><span class="text-xl font-bold text-gray-700">円</span>
+                    <p class="text-sm text-gray-500 mt-2">サイト制作・広告初期設定・LINE構築・マップ最適化</p>
                 </div>
                 <div>
-                    <span class="text-gray-400 block mb-2">月額運用・管理費</span>
-                    <span class="text-4xl font-bold text-yellow-400">30,000</span><span class="text-xl">円</span>
-                    <p class="text-sm text-gray-400 mt-2">毎月の広告チューニング・サイト保守・サーバー代込み<br>※Google広告費（実費）は別途ご用意ください</p>
+                    <span class="text-gray-600 block mb-2 font-bold">月額運用・管理費</span>
+                    <span class="text-5xl font-extrabold text-red-600">30,000</span><span class="text-xl font-bold text-gray-700">円</span>
+                    <p class="text-sm text-gray-500 mt-2">毎月の広告チューニング・サイト保守・サーバー代込み<br>※Google広告費（実費）は別途ご用意ください</p>
                 </div>
             </div>
         </div>
@@ -131,12 +187,12 @@
             まずは「本当に自分のエリアでも効果が出るの？」という疑問からお答えします。<br>
             強引な売り込みは一切いたしません。お気軽にご相談ください！
         </p>
-        <a href="【★ここに公式LINEのURLを入れます★】" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg transition duration-300">
+        <a href="【★ここに公式LINEのURLを入れます★】" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-5 px-12 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
             LINEで無料相談・質問する
         </a>
     </section>
 
-    <footer class="bg-gray-100 text-center py-6 text-gray-500 text-sm">
+    <footer class="bg-gray-800 text-center py-8 text-gray-400 text-sm">
         &copy; 2026 Speed Web Marketing. All Rights Reserved.
     </footer>
 
