@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,11 +15,8 @@
             --gray: #8a8a8a;
             --red: #c0392b;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         html { scroll-behavior: smooth; }
-
         body {
             background: var(--black);
             color: var(--white);
@@ -28,13 +24,9 @@
             line-height: 1.7;
             overflow-x: hidden;
         }
-
-        /* ===== HEADER ===== */
         .site-header {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             z-index: 100;
             padding: 16px 24px;
             display: flex;
@@ -44,14 +36,12 @@
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(201,168,76,0.2);
         }
-
         .logo {
             font-family: 'Oswald', sans-serif;
             font-size: 18px;
             color: var(--gold);
             letter-spacing: 0.05em;
         }
-
         .header-cta {
             background: var(--gold);
             color: var(--black);
@@ -63,8 +53,6 @@
             transition: background 0.2s;
         }
         .header-cta:hover { background: var(--gold-light); }
-
-        /* ===== HERO ===== */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -75,7 +63,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -84,7 +71,6 @@
                 radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%),
                 linear-gradient(180deg, #0a0a0a 0%, #111318 100%);
         }
-
         .hero-grid {
             position: absolute;
             inset: 0;
@@ -93,12 +79,7 @@
                 linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
             background-size: 60px 60px;
         }
-
-        .hero-inner {
-            position: relative;
-            max-width: 860px;
-        }
-
+        .hero-inner { position: relative; max-width: 860px; }
         .hero-badge {
             display: inline-block;
             background: rgba(201,168,76,0.15);
@@ -110,38 +91,26 @@
             padding: 8px 20px;
             border-radius: 2px;
             margin-bottom: 32px;
-            animation: fadeUp 0.8s ease both;
         }
-
         .hero h1 {
             font-size: clamp(32px, 6vw, 72px);
             font-weight: 900;
             line-height: 1.2;
             margin-bottom: 28px;
-            animation: fadeUp 0.8s 0.1s ease both;
         }
-
-        .hero h1 em {
-            font-style: normal;
-            color: var(--gold);
-        }
-
+        .hero h1 em { font-style: normal; color: var(--gold); }
         .hero-sub {
             font-size: clamp(15px, 2vw, 18px);
             color: #aaa;
             max-width: 600px;
             margin: 0 auto 48px;
-            animation: fadeUp 0.8s 0.2s ease both;
         }
-
         .hero-btns {
             display: flex;
             gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
-            animation: fadeUp 0.8s 0.3s ease both;
         }
-
         .btn-primary {
             background: var(--gold);
             color: var(--black);
@@ -158,9 +127,7 @@
         .btn-primary:hover {
             background: var(--gold-light);
             transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(201,168,76,0.3);
         }
-
         .btn-secondary {
             border: 1px solid rgba(255,255,255,0.2);
             color: var(--white);
@@ -170,11 +137,7 @@
             text-decoration: none;
             transition: all 0.2s;
         }
-        .btn-secondary:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-        }
-
+        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
         .hero-numbers {
             display: flex;
             gap: 48px;
@@ -182,10 +145,8 @@
             margin-top: 64px;
             padding-top: 48px;
             border-top: 1px solid rgba(255,255,255,0.08);
-            animation: fadeUp 0.8s 0.4s ease both;
             flex-wrap: wrap;
         }
-
         .hero-num-item { text-align: center; }
         .hero-num-value {
             font-family: 'Oswald', sans-serif;
@@ -193,18 +154,9 @@
             color: var(--gold);
             line-height: 1;
         }
-        .hero-num-label {
-            font-size: 12px;
-            color: var(--gray);
-            margin-top: 6px;
-            letter-spacing: 0.05em;
-        }
-
-        /* ===== SECTIONS ===== */
+        .hero-num-label { font-size: 12px; color: var(--gray); margin-top: 6px; }
         section { padding: 100px 24px; }
-
         .container { max-width: 960px; margin: 0 auto; }
-
         .section-label {
             font-size: 11px;
             letter-spacing: 0.2em;
@@ -213,30 +165,20 @@
             margin-bottom: 16px;
             text-transform: uppercase;
         }
-
         .section-title {
             font-size: clamp(26px, 4vw, 44px);
             font-weight: 900;
             line-height: 1.25;
             margin-bottom: 20px;
         }
-
         .section-desc {
             font-size: 16px;
             color: #aaa;
             max-width: 600px;
             margin-bottom: 56px;
         }
-
-        /* ===== PAIN ===== */
         .pain { background: var(--dark); }
-
-        .pain-list {
-            display: grid;
-            gap: 16px;
-            margin-bottom: 48px;
-        }
-
+        .pain-list { display: grid; gap: 16px; margin-bottom: 48px; }
         .pain-item {
             display: flex;
             align-items: flex-start;
@@ -245,27 +187,20 @@
             background: rgba(255,255,255,0.03);
             border: 1px solid rgba(255,255,255,0.06);
             border-radius: 8px;
-            transition: border-color 0.2s;
         }
-        .pain-item:hover { border-color: rgba(192,57,43,0.3); }
-
         .pain-icon {
-            width: 24px;
-            height: 24px;
+            width: 24px; height: 24px;
             background: rgba(192,57,43,0.15);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            margin-top: 2px;
             color: var(--red);
             font-size: 14px;
             font-weight: 900;
         }
-
         .pain-text { font-size: 15px; line-height: 1.6; }
-
         .pain-resolve {
             background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05));
             border: 1px solid rgba(201,168,76,0.3);
@@ -276,17 +211,13 @@
             color: var(--gold);
             text-align: center;
         }
-
-        /* ===== PROOF ===== */
         .proof { background: var(--black); }
-
         .proof-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 24px;
             margin-bottom: 48px;
         }
-
         .proof-card {
             background: rgba(201,168,76,0.05);
             border: 1px solid rgba(201,168,76,0.2);
@@ -295,11 +226,7 @@
             text-align: center;
             transition: all 0.2s;
         }
-        .proof-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-4px);
-        }
-
+        .proof-card:hover { border-color: var(--gold); transform: translateY(-4px); }
         .proof-value {
             font-family: 'Oswald', sans-serif;
             font-size: 52px;
@@ -309,7 +236,6 @@
         }
         .proof-unit { font-size: 20px; }
         .proof-label { font-size: 13px; color: #aaa; }
-
         .proof-note {
             background: rgba(255,255,255,0.03);
             border-left: 3px solid var(--gold);
@@ -319,16 +245,12 @@
             color: #aaa;
             line-height: 1.8;
         }
-
-        /* ===== SERVICES ===== */
         .services { background: var(--dark); }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
         }
-
         .service-card {
             background: rgba(255,255,255,0.02);
             border: 1px solid rgba(255,255,255,0.07);
@@ -347,12 +269,8 @@
             opacity: 0;
             transition: opacity 0.25s;
         }
-        .service-card:hover {
-            border-color: rgba(201,168,76,0.3);
-            transform: translateY(-4px);
-        }
+        .service-card:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-4px); }
         .service-card:hover::before { opacity: 1; }
-
         .service-num {
             font-family: 'Oswald', sans-serif;
             font-size: 40px;
@@ -360,548 +278,9 @@
             line-height: 1;
             margin-bottom: 16px;
         }
-
-        .service-title {
-            font-size: 17px;
-            font-weight: 700;
-            color: var(--gold);
-            margin-bottom: 12px;
-        }
-
-        .service-desc {
-            font-size: 14px;
-            color: #aaa;
-            line-height: 1.75;
-        }
-
-        /* ===== PRICING ===== */
+        .service-title { font-size: 17px; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
+        .service-desc { font-size: 14px; color: #aaa; line-height: 1.75; }
         .pricing { background: var(--black); }
-
         .pricing-wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-bottom: 40px;
-        }
-
-        .price-card {
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            padding: 40px 32px;
-            text-align: center;
-            position: relative;
-        }
-
-        .price-card.featured {
-            border-color: var(--gold);
-            background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02));
-        }
-
-        .price-badge {
-            position: absolute;
-            top: -14px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--gold);
-            color: var(--black);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            padding: 6px 16px;
-            border-radius: 20px;
-            white-space: nowrap;
-        }
-
-        .price-plan { font-size: 13px; color: var(--gray); margin-bottom: 8px; letter-spacing: 0.1em; }
-        .price-value {
-            font-family: 'Oswald', sans-serif;
-            font-size: 56px;
-            line-height: 1;
-            color: var(--white);
-            margin-bottom: 4px;
-        }
-        .price-value.gold { color: var(--gold); }
-        .price-unit { font-size: 16px; color: var(--gray); margin-bottom: 24px; }
-
-        .price-features {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 32px;
-        }
-        .price-features li {
-            font-size: 14px;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #ccc;
-        }
-        .price-features li::before {
-            content: '✓';
-            color: var(--gold);
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .price-cta {
-            display: block;
-            text-align: center;
-            padding: 14px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 15px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .price-cta.primary {
-            background: var(--gold);
-            color: var(--black);
-        }
-        .price-cta.primary:hover { background: var(--gold-light); }
-        .price-cta.secondary {
-            border: 1px solid rgba(255,255,255,0.2);
-            color: var(--white);
-        }
-        .price-cta.secondary:hover { border-color: var(--gold); color: var(--gold); }
-
-        .pricing-note {
-            font-size: 13px;
-            color: var(--gray);
-            text-align: center;
-            line-height: 1.8;
-        }
-
-        /* ===== FLOW ===== */
-        .flow { background: var(--dark); }
-
-        .flow-steps {
-            display: grid;
-            gap: 0;
-            position: relative;
-        }
-
-        .flow-step {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            gap: 24px;
-            padding-bottom: 40px;
-            position: relative;
-        }
-
-        .flow-step:last-child { padding-bottom: 0; }
-
-        .flow-step-left {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .flow-step-num {
-            width: 48px;
-            height: 48px;
-            background: var(--gold);
-            color: var(--black);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Oswald', sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .flow-step-line {
-            width: 1px;
-            flex: 1;
-            background: rgba(201,168,76,0.2);
-            margin-top: 8px;
-        }
-
-        .flow-step:last-child .flow-step-line { display: none; }
-
-        .flow-step-content {
-            padding-top: 10px;
-            padding-bottom: 8px;
-        }
-
-        .flow-step-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .flow-step-desc {
-            font-size: 14px;
-            color: #aaa;
-            line-height: 1.75;
-        }
-
-        /* ===== CTA ===== */
-        .cta-section {
-            background: linear-gradient(135deg, #0f0f0f, #1a1508);
-            border-top: 1px solid rgba(201,168,76,0.2);
-            border-bottom: 1px solid rgba(201,168,76,0.2);
-            text-align: center;
-            padding: 100px 24px;
-        }
-
-        .cta-section .section-title { margin-bottom: 16px; }
-
-        .cta-section .section-desc {
-            margin: 0 auto 48px;
-        }
-
-        .cta-limit {
-            display: inline-block;
-            background: rgba(192,57,43,0.15);
-            border: 1px solid rgba(192,57,43,0.4);
-            color: #e74c3c;
-            font-size: 13px;
-            font-weight: 700;
-            padding: 8px 20px;
-            border-radius: 4px;
-            margin-bottom: 32px;
-            letter-spacing: 0.05em;
-        }
-
-        .line-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: #06C755;
-            color: #fff;
-            font-weight: 700;
-            font-size: 18px;
-            padding: 20px 48px;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.2s;
-            box-shadow: 0 4px 24px rgba(6,199,85,0.3);
-        }
-        .line-btn:hover {
-            background: #05b54d;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 40px rgba(6,199,85,0.4);
-        }
-
-        .line-icon {
-            width: 28px;
-            height: 28px;
-            background: #fff;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #06C755;
-            font-weight: 900;
-            font-size: 16px;
-        }
-
-        .cta-note {
-            margin-top: 20px;
-            font-size: 13px;
-            color: var(--gray);
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: #050505;
-            text-align: center;
-            padding: 32px 24px;
-            font-size: 12px;
-            color: var(--gray);
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-
-        /* ===== ANIMATIONS ===== */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ===== MOBILE ===== */
-        @media (max-width: 640px) {
-            .hero-numbers { gap: 32px; }
-            .hero-num-value { font-size: 36px; }
-            .flow-step { grid-template-columns: 56px 1fr; }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="logo">運転代行の集客屋</div>
-        <a href="#cta" class="header-cta">無料相談する</a>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-grid"></div>
-        <div class="hero-inner">
-            <div class="hero-badge">運転代行業者専門 · Web集客パッケージ</div>
-            <h1>
-                運転代行の<em>集客屋</em><br>
-                ポータル依存から<br>卒業しませんか？
-            </h1>
-            <p class="hero-sub">
-                宮崎で半年間・360件の反響を叩き出した<br>
-                「同業者が作った」本物の集客システムを丸ごと提供します。
-            </p>
-            <div class="hero-btns">
-                <a href="#cta" class="btn-primary">
-                    <span>LINEで無料相談する</span>
-                    <span>→</span>
-                </a>
-                <a href="#pricing" class="btn-secondary">料金を見る</a>
-            </div>
-            <div class="hero-numbers">
-                <div class="hero-num-item">
-                    <div class="hero-num-value">360<span style="font-size:24px">件</span></div>
-                    <div class="hero-num-label">半年間のGoogleマップ反響</div>
-                </div>
-                <div class="hero-num-item">
-                    <div class="hero-num-value">100<span style="font-size:24px">%</span></div>
-                    <div class="hero-num-label">Google広告 上部表示率</div>
-                </div>
-                <div class="hero-num-item">
-                    <div class="hero-num-value">0<span style="font-size:24px">円</span></div>
-                    <div class="hero-num-label">初期費用</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PAIN -->
-    <section class="pain">
-        <div class="container">
-            <p class="section-label reveal">こんなお悩みありませんか</p>
-            <h2 class="section-title reveal">その集客方法、<br>もう限界じゃないですか？</h2>
-            <div class="pain-list">
-                <div class="pain-item reveal">
-                    <div class="pain-icon">✕</div>
-                    <p class="pain-text">ポータルサイトに載せているが、他社との安売り競争に疲れ果てている</p>
-                </div>
-                <div class="pain-item reveal">
-                    <div class="pain-icon">✕</div>
-                    <p class="pain-text">週末は忙しいが平日は暇で、ドライバーを遊ばせてしまっている</p>
-                </div>
-                <div class="pain-item reveal">
-                    <div class="pain-icon">✕</div>
-                    <p class="pain-text">ホームページや広告をやりたいが、専門用語が全くわからず手が出せない</p>
-                </div>
-                <div class="pain-item reveal">
-                    <div class="pain-icon">✕</div>
-                    <p class="pain-text">電話が鳴らない日が続き、このまま続けられるか不安になっている</p>
-                </div>
-            </div>
-            <div class="pain-resolve reveal">
-                → 同業者である私たちが、すべて丸投げで解決します。
-            </div>
-        </div>
-    </section>
-
-    <!-- PROOF -->
-    <section class="proof">
-        <div class="container">
-            <p class="section-label reveal">実績</p>
-            <h2 class="section-title reveal">私たち自身が<br>宮崎で証明しました。</h2>
-            <p class="section-desc reveal">なぜ私たちが支援できるのか。それは自分たちが現場でやり切り、結果を出したからです。</p>
-            <div class="proof-grid">
-                <div class="proof-card reveal">
-                    <div class="proof-value">360<span class="proof-unit">件</span></div>
-                    <div class="proof-label">半年間のGoogleマップ反響数</div>
-                </div>
-                <div class="proof-card reveal">
-                    <div class="proof-value">100<span class="proof-unit">%</span></div>
-                    <div class="proof-label">Google広告 上部表示率</div>
-                </div>
-                <div class="proof-card reveal">
-                    <div class="proof-value" style="font-size:32px; padding-top:10px">高単価<br>路線</div>
-                    <div class="proof-label">それでも指名予約が殺到</div>
-                </div>
-            </div>
-            <div class="proof-note reveal">
-                ※ 宮崎市内での実績です。地域・競合状況によって効果は異なります。まずはお気軽に無料相談ください。
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-        <div class="container">
-            <p class="section-label reveal">サービス内容</p>
-            <h2 class="section-title reveal">丸投げOK。<br>4つの集客インフラを提供します。</h2>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-num">01</div>
-                    <div class="service-title">スマホで爆速表示・維持費0円のWebサイト</div>
-                    <p class="service-desc">表示が遅いサイトはお客様を逃がします。サーバー代0円・1秒以内に開くスマホ特化サイトを制作。あなたの代行の強みを100%伝えます。</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-num">02</div>
-                    <div class="service-title">「今すぐ帰りたい客」を狙うGoogle広告運用</div>
-                    <p class="service-desc">高単価・質の良いお客様をAIに学習させた設定を適用。毎月の広告チューニングもすべてお任せください。</p>
-                </div>
-                <div class="service-card reveal" style="border-color: rgba(201,168,76,0.2);">
-                    <div class="service-num" style="color:rgba(201,168,76,0.4)">+</div>
-                    <div class="service-title">オプション：MEO初期設定 19,800円</div>
-                    <p class="service-desc">「○○市 運転代行」で上位表示されるためのGoogleマップ最適化。口コミ・写真の攻略マニュアルもお渡しします。</p>
-                </div>
-                <div class="service-card reveal" style="border-color: rgba(201,168,76,0.2);">
-                    <div class="service-num" style="color:rgba(201,168,76,0.4)">+</div>
-                    <div class="service-title">オプション：LINE公式アカウント構築 19,800円</div>
-                    <p class="service-desc">リピーター獲得・取りこぼし防止のためのLINE公式アカウントを構築。過去のお客様への一斉配信設定もお任せください。</p>
-                </div>
-                <div class="service-card reveal" style="border-color: rgba(201,168,76,0.2);">
-                    <div class="service-num" style="color:rgba(201,168,76,0.4)">+</div>
-                    <div class="service-title">オプション：運行記録デジタル化 9,800円</div>
-                    <p class="service-desc">紙の手書きをスマホ入力に。Googleフォームで自動集計・月末の売上管理が一瞬でできます。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <p class="section-label reveal">料金</p>
-            <h2 class="section-title reveal">初期費用0円。<br>まず試してから決めてください。</h2>
-            <p class="section-desc reveal">「本当に効果が出るのか？」その不安を解消するために、お試しプランを用意しました。</p>
-            <div class="pricing-wrapper">
-                <div class="price-card reveal">
-                    <p class="price-plan">お試しプラン</p>
-                    <div class="price-value">9,800</div>
-                    <p class="price-unit">円 / 最初の1ヶ月</p>
-                    <ul class="price-features">
-                        <li>Webサイト（LP）制作・公開</li>
-                        <li>Google広告 初期設定・運用開始</li>
-                    </ul>
-                    <a href="#cta" class="price-cta secondary">まず試してみる</a>
-                </div>
-                <div class="price-card featured reveal">
-                    <div class="price-badge">🔥 継続プラン（本契約）</div>
-                    <p class="price-plan" style="margin-top:16px">月額</p>
-                    <div class="price-value gold">29,800</div>
-                    <p class="price-unit">円 / 月（最低3ヶ月〜）</p>
-                    <ul class="price-features">
-                        <li>毎月の広告チューニング</li>
-                        <li>Webサイト保守・更新</li>
-                        <li>月次レポート送付</li>
-                        <li>LINEサポート対応</li>
-                        <li>サーバー・ドメイン代込み</li>
-                    </ul>
-                    <a href="#cta" class="price-cta primary">LINEで相談する</a>
-                </div>
-            </div>
-            <p class="pricing-note reveal">
-                ※ Google広告費（実費・月3〜5万円が目安）は別途お客様のカードからお支払いいただきます。<br>
-                ※ 同一エリアでの複数業者への提供は行いません。各エリア1社限定です。<br><br>
-                <strong style="color: var(--gold)">オプション（一回払い）</strong><br>
-                MEO初期設定（Googleマップ最適化）：19,800円　／　LINE公式アカウント構築：19,800円　／　運行記録デジタル化：9,800円
-            </p>
-        </div>
-    </section>
-
-    <!-- FLOW -->
-    <section class="flow">
-        <div class="container">
-            <p class="section-label reveal">ご利用の流れ</p>
-            <h2 class="section-title reveal">申し込みから<br>集客開始まで最短1週間。</h2>
-            <div class="flow-steps">
-                <div class="flow-step reveal">
-                    <div class="flow-step-left">
-                        <div class="flow-step-num">1</div>
-                        <div class="flow-step-line"></div>
-                    </div>
-                    <div class="flow-step-content">
-                        <div class="flow-step-title">LINEで無料相談・ヒアリング</div>
-                        <p class="flow-step-desc">お気軽にLINEでご連絡ください。御社のエリア・現状・お悩みを30分ほどお聞きします。強引な売り込みは一切しません。</p>
-                    </div>
-                </div>
-                <div class="flow-step reveal">
-                    <div class="flow-step-left">
-                        <div class="flow-step-num">2</div>
-                        <div class="flow-step-line"></div>
-                    </div>
-                    <div class="flow-step-content">
-                        <div class="flow-step-title">御社専用の提案書をお送りします</div>
-                        <p class="flow-step-desc">ヒアリング後、「御社のエリアではこうなります」という具体的な提案書をLINEでお送りします。</p>
-                    </div>
-                </div>
-                <div class="flow-step reveal">
-                    <div class="flow-step-left">
-                        <div class="flow-step-num">3</div>
-                        <div class="flow-step-line"></div>
-                    </div>
-                    <div class="flow-step-content">
-                        <div class="flow-step-title">お試し9,800円でスタート</div>
-                        <p class="flow-step-desc">まず1ヶ月だけ試してください。Webサイト制作とGoogle広告の初期設定を行い、集客を開始します。</p>
-                    </div>
-                </div>
-                <div class="flow-step reveal">
-                    <div class="flow-step-left">
-                        <div class="flow-step-num">4</div>
-                        <div class="flow-step-line"></div>
-                    </div>
-                    <div class="flow-step-content">
-                        <div class="flow-step-title">効果確認 → 本契約（月29,800円）</div>
-                        <p class="flow-step-desc">1ヶ月後に成果をご確認いただき、続けるかどうかご判断ください。毎月レポートで数字を可視化します。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section" id="cta">
-        <div class="container">
-            <div class="cta-limit">各エリア【1社限定】・先着順</div>
-            <h2 class="section-title reveal">まず話だけでも<br>聞いてみてください。</h2>
-            <p class="section-desc reveal">
-                同じエリアで複数の業者様に提供すると、検索の奪い合いになります。<br>
-                「自分のエリアは空いているか？」だけでも確認できます。<br>
-                強引な売り込みは一切しません。
-            </p>
-            <a href="【★ここに公式LINEのURLを入れます★】" class="line-btn">
-                <div class="line-icon">L</div>
-                LINEで無料相談する
-            </a>
-            <p class="cta-note">お返事は24時間以内 · 完全無料 · しつこい営業なし</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 運転代行の集客屋. All Rights Reserved.</p>
-    </footer>
-
-    <script>
-        // Scroll reveal
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, i * 80);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        reveals.forEach(el => observer.observe(el));
-    </script>
-
-</body>
-</html>
+            grid-template-columns: repeat(auto-fit, minmax(
